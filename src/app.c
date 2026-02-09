@@ -12,7 +12,7 @@ void app_task(void)
 {
     if (g_sample_ready)
     {
-        g_sample_ready = 0;
+        g_sample_ready = false;
 
         int16_t temp_x10 = temp_convert(g_adc_raw);
         temp_state_t state = temp_evaluate(temp_x10);

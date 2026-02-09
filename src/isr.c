@@ -7,5 +7,5 @@ volatile uint8_t  g_sample_ready;
 void TIMER_ISR(void)
 {
     g_adc_raw = adc_read();
-    g_sample_ready = 1;
+    g_sample_ready = true;
 }
