@@ -16,7 +16,8 @@ void app_task(void)
 
         int16_t temp_x10 = temp_convert(g_adc_raw);
         temp_state_t state = temp_evaluate(temp_x10);
-
+        
+        leds_all_off();
         leds_set(state);
     }
 }
